@@ -27,11 +27,9 @@ const gamesContainer = document.getElementById("games-container");
 
 // create a function that adds all data from the games array to the page
 function addGamesToPage(games) {
-    console.log(games);
 
     // loop over each item in the data
     for (let i = 0; i < games.length; i++){
-        console.log(games)
 
 
         // create a new div element, which will become the game card
@@ -72,20 +70,32 @@ addGamesToPage(GAMES_JSON);
 const contributionsCard = document.getElementById("num-contributions");
 
 // use reduce() to count the number of total contributions by summing the backers
-
-
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
+const totalContributions = GAMES_JSON.reduce( (acc, game) => {
+    return acc + game.backers;
+}, 0).toLocaleString('en-US');
 
+contributionsCard.innerHTML = `${totalContributions}`;
 
 // grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
 
+const totalRaised = GAMES_JSON.reduce( (acc, game) => {
+    return acc + game.pledged;
+}, 0).toLocaleString('en-US');
+
 // set inner HTML using template literal
+raisedCard.innerHTML = `$${totalRaised}`;
 
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+const totalGames = GAMES_JSON.reduce( (acc, game) => {
+    return acc + 1;
+}, 0).toLocaleString('en-US');
 
+// set inner HTML using template literal
+gamesCard.innerHTML = `${totalGames}`;
 
 /*************************************************************************************
  * Challenge 5: Add functions to filter the funded and unfunded games
