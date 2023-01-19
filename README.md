@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/ZLagvlf' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/jontlo/web102_prework/CodepathPrework.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- GIF created with ScreentoGIF(https://www.screentogif.com) for Windows-->
 
