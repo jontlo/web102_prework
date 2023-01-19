@@ -23,9 +23,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/ZLagvlf' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- GIF created with LICEcap(https://www.cockos.com/licecap/) for Windows-->
+<!-- GIF created with ScreentoGIF(https://www.screentogif.com) for Windows-->
 
 ## Notes
 
